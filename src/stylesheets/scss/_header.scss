@@ -1,0 +1,74 @@
+@use "variables" as v; 
+@use "extends";
+@use "mixins" as mx;
+
+/* START HEADER */
+.header {
+  @include mx.container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand img {
+    width: 75%;
+  }
+
+  &__nav ul {
+    display: flex;
+  }
+
+  &__nav ul li{
+    @extend %list-none;
+    padding: 0 1rem;
+  }
+
+  &__nav ul li a{
+    @extend %decoration-none;
+    text-transform: uppercase;
+    color: v.$fontColor;
+    font-weight: 700;
+  }
+
+  &__nav ul li a:hover{
+    color: rgba(v.$fontColor, .7);
+  }
+
+  &__userProfile {
+    display: flex;
+    align-items: center;
+  }
+
+  &__userProfile .profile {
+    display: flex;
+    align-items: center;
+    margin: 0 .5rem;
+  }
+
+  &__userProfile .profile span {
+    padding: 0 1rem 0 .5rem;
+  }
+
+  &__userProfile .profile img {
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.747);
+    width: 2.5rem;
+  }
+
+  &__userProfile .authentication-btn button {
+    @include mx.button-shadow;
+    background-color: v.$buttonColor;
+    color: v.$fontColorSecond;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__userProfile .authentication-btn button:hover {
+    background-color: rgba(v.$buttonColor, .7);
+  }
+}
+/* END READER */
+

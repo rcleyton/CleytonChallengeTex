@@ -1,0 +1,76 @@
+.header__nav ul li {
+  list-style: none;
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+}
+
+/* START HEADER */
+.header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.2rem 2rem;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__brand img {
+  width: 75%;
+}
+.header__nav ul {
+  display: flex;
+}
+.header__nav ul li {
+  padding: 0 1rem;
+}
+.header__nav ul li a {
+  text-transform: uppercase;
+  color: #011627;
+  font-weight: 700;
+}
+.header__nav ul li a:hover {
+  color: rgba(1, 22, 39, 0.7);
+}
+.header__userProfile {
+  display: flex;
+  align-items: center;
+}
+.header__userProfile .profile {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.header__userProfile .profile span {
+  padding: 0 1rem 0 0.5rem;
+}
+.header__userProfile .profile img {
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.747);
+  width: 2.5rem;
+}
+.header__userProfile .authentication-btn button {
+  box-shadow: 0.3px 0.3px 0.9px rgba(0, 0, 0, 0.02), 0.7px 0.8px 2.1px rgba(0, 0, 0, 0.028), 1.4px 1.5px 3.9px rgba(0, 0, 0, 0.035), 2.5px 2.7px 6.9px rgba(0, 0, 0, 0.042), 4.6px 5px 13px rgba(0, 0, 0, 0.05), 11px 12px 31px rgba(0, 0, 0, 0.07);
+  background-color: #E71D36;
+  color: #FDFFFC;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.header__userProfile .authentication-btn button:hover {
+  background-color: rgba(231, 29, 54, 0.7);
+}
+
+/* END READER */
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

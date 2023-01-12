@@ -66,6 +66,14 @@
 }
 
 /* END READER */
+.hero {
+  height: 75vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 * {
   font-family: "Inter", sans-serif;
   padding: 0;

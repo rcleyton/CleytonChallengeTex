@@ -6,7 +6,6 @@
 
   &__title {
     @include mx.title;
-    text-align: right;
   }
 
   &__map {
@@ -18,14 +17,16 @@
   }
 }
 
-//  Smartphones - Retrato
+// MOBILE
+
 @media (max-width: 415px) and (orientation: portrait) {
   .areaMap {
     width: 90%;
-   
+    padding: 2rem 0 0 0;
+
     &__title {
       text-align: left;
-      line-height: 3rem;
+      line-height: 2rem;
     }
   }
 

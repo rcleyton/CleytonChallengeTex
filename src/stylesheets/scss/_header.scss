@@ -9,8 +9,6 @@
   align-items: center;
   justify-content: space-between;
   padding: .7rem 2rem;
-  position: fixed;
-  top: 0;
 
   &__brand img {
     width: 75%;
@@ -59,4 +57,19 @@
 }
 /* END HEADER */
 
+// MOBILE
 
+@media (max-width: 415px) and (orientation: portrait) {
+  .header {
+    justify-content: space-between;
+
+    &__userProfile .profile span {
+      display: none;
+    }
+
+    &__nav ul {
+      display: none;
+    }
+
+  }
+ }

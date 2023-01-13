@@ -35,3 +35,26 @@
     margin-bottom: 2rem;
   }
 }
+
+// MOBILE
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .aboutUs {
+    width: 90%;
+    padding: 4rem 0 2rem 0;
+    &__content {
+      flex-direction: column;
+    }
+
+    &__title {
+      @include mx.responsiveTitle;
+      line-height: 3rem;
+    }
+
+    &__content .contentText {
+      margin-top: 2rem;
+      padding: 0;
+    }
+  }
+
+}

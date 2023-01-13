@@ -56,6 +56,23 @@
       gap: 1rem;
     }
   }
+}
 
-  
+@media (max-width: 915px) and (orientation: landscape) {
+  .gallery {
+    width: 90%;
+    padding: 2rem 0;
+    margin-bottom: 0;
+
+    &__title {
+      @include mx.responsiveTitle;
+      line-height: 3rem;
+      margin: 0;
+    }
+
+    &__grid {
+      grid-template-columns: auto auto;
+      gap: 1rem;
+    }
+  }
 }

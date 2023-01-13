@@ -73,3 +73,16 @@
 
   }
  }
+
+ @media (max-width: 915px) and (orientation: landscape) {
+
+  .header {
+    &__nav ul li a{
+      font-size: .7rem;
+    }
+
+    &__userProfile .profile span {
+      display: none;
+    }
+  }
+}

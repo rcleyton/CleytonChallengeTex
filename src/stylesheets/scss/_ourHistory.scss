@@ -84,3 +84,31 @@
   
   }
 }
+
+@media (max-width: 915px) and (orientation: landscape) {
+  .ourHistory {
+    width: 90%;
+    padding: 2rem 0;
+    
+    &__title {
+      @include mx.responsiveTitle;
+      line-height: 3rem;
+    }
+    
+    &__content2,
+    &__content {
+      flex-direction: column;
+    }
+
+    &__content2 {
+      margin-top: 2.5rem;
+    }
+
+    &__content .contentText,
+    &__content2 .contentText {
+      margin-top: 2rem;
+      padding: 0;
+    }
+  
+  }
+}

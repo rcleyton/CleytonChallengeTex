@@ -27,8 +27,11 @@
   }
  }
 
-// //  Smartphones - Paisagem
-// @media (max-width: 915px) and (orientation: landscape) { ... }
+@media (max-width: 915px) and (orientation: landscape) {
+  .hero__slogan {
+    font-size: 2rem;
+  }
+}
 
 // // Smartphones/Trablets - Retrato
 // @media (max-width: 915px) and (orientation: portrait),

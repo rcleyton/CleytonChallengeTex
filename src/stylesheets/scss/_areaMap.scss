@@ -29,5 +29,16 @@
       line-height: 2rem;
     }
   }
+}
 
+@media (max-width: 915px) and (orientation: landscape) {
+  .areaMap {
+    width: 90%;
+    padding: 2rem 0 0 0;
+
+    &__title {
+      text-align: left;
+      line-height: 2rem;
+    }
+  }
 }

@@ -1,0 +1,138 @@
+@use "variables" as v; 
+@use "mixins" as mx;
+@use "extends";
+
+.footer {
+  @include mx.container;
+
+  &__title {
+    @include mx.title;
+  }
+  &__content {
+    display: flex;
+  }
+
+  &__formReserv,
+  &__info {
+    width: 50%;
+  }
+
+  &__formReserv {
+  padding: 0 2.5rem 0 0;
+  }
+
+  &__formReserv .dataReserv {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__formReserv .dataReserv .startDate,
+  &__formReserv .dataReserv .endDate {
+    width: 45%;
+  }
+
+  &__formReserv .dataReserv .startDate input[type="date"] ,
+  &__formReserv .dataReserv .endDate input[type="date"] {
+    width: 100%;
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px #eee, -1px -1px 2px #eee;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  &__formReserv .dataReserv label {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  &__formReserv .numAdult,
+  &__formReserv .numKids {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: baseline;
+  }
+
+  &__formReserv .numAdult input,
+  &__formReserv .numKids input{
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px #eee, -1px -1px 2px #eee;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  &__formReserv .contactMail label{
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  &__formReserv .contactMail input {
+    width: 100%;
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px #eee, -1px -1px 2px #eee;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  &__formReserv .contactMail button {
+    @include mx.button-shadow;
+    margin-top: 1rem;
+    background-color: v.$buttonColor;
+    color: v.$fontColorSecond;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__formReserv .contactMail button:hover {
+    background-color: rgba(v.$buttonColor, .7);
+  }
+
+  &__info {
+    margin: 0 0 0 2rem;
+  }
+
+  &__info .contactTitle,
+  &__info .socialTitle {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__info .infoFooterSocial {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info .infoFooterSocial li {
+    @extend %list-none;
+    font-size: 1.2rem;
+    padding: 0 0 2rem 0;
+  }
+
+  &__text {
+    margin: 3rem 0 0 0;
+    line-height: 2rem;
+  }
+
+  &__copy {
+    margin: 5rem 0 .5rem 0;
+    text-align: right;
+  }
+}
+
+
+
+

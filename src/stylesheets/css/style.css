@@ -1,4 +1,4 @@
-.header__nav ul li {
+.footer__info .infoFooterSocial li, .header__nav ul li {
   list-style: none;
 }
 
@@ -58,7 +58,7 @@
   font-weight: bold;
   padding: 1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .header__userProfile .authentication-btn button:hover {
@@ -195,6 +195,114 @@
 }
 .areaMap__map iframe {
   width: 100%;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer__title {
+  bottom-margin: 3rem;
+  font-size: 2.5rem;
+  line-height: 9rem;
+}
+.footer__content {
+  display: flex;
+}
+.footer__formReserv, .footer__info {
+  width: 50%;
+}
+.footer__formReserv {
+  padding: 0 2.5rem 0 0;
+}
+.footer__formReserv .dataReserv {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__formReserv .dataReserv .startDate, .footer__formReserv .dataReserv .endDate {
+  width: 45%;
+}
+.footer__formReserv .dataReserv .startDate input[type=date], .footer__formReserv .dataReserv .endDate input[type=date] {
+  width: 100%;
+  padding: 2%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 2px #eee, -1px -1px 2px #eee;
+  margin-bottom: 2rem;
+  transition: 0.5s;
+  outline: none;
+}
+.footer__formReserv .dataReserv label {
+  margin-bottom: 1rem;
+  display: block;
+}
+.footer__formReserv .numAdult, .footer__formReserv .numKids {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: baseline;
+}
+.footer__formReserv .numAdult input, .footer__formReserv .numKids input {
+  padding: 2%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 2px #eee, -1px -1px 2px #eee;
+  transition: 0.5s;
+  outline: none;
+}
+.footer__formReserv .contactMail label {
+  margin-bottom: 1rem;
+  display: block;
+}
+.footer__formReserv .contactMail input {
+  width: 100%;
+  padding: 2%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 2px #eee, -1px -1px 2px #eee;
+  transition: 0.5s;
+  outline: none;
+}
+.footer__formReserv .contactMail button {
+  box-shadow: 0.3px 0.3px 0.9px rgba(0, 0, 0, 0.02), 0.7px 0.8px 2.1px rgba(0, 0, 0, 0.028), 1.4px 1.5px 3.9px rgba(0, 0, 0, 0.035), 2.5px 2.7px 6.9px rgba(0, 0, 0, 0.042), 4.6px 5px 13px rgba(0, 0, 0, 0.05), 11px 12px 31px rgba(0, 0, 0, 0.07);
+  margin-top: 1rem;
+  background-color: #E71D36;
+  color: #FDFFFC;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer__formReserv .contactMail button:hover {
+  background-color: rgba(231, 29, 54, 0.7);
+}
+.footer__info {
+  margin: 0 0 0 2rem;
+}
+.footer__info .contactTitle, .footer__info .socialTitle {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+.footer__info .infoFooterSocial {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info .infoFooterSocial li {
+  font-size: 1.2rem;
+  padding: 0 0 2rem 0;
+}
+.footer__text {
+  margin: 3rem 0 0 0;
+  line-height: 2rem;
+}
+.footer__copy {
+  margin: 5rem 0 0.5rem 0;
+  text-align: right;
 }
 
 * {

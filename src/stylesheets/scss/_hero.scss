@@ -1,7 +1,27 @@
 .hero {
-  height: 75vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+//  Smartphones - Retrato
+// @media (max-width: 415px) and (orientation: portrait) {
+
+//  }
+
+// //  Smartphones - Paisagem
+// @media (max-width: 915px) and (orientation: landscape) { ... }
+
+// // Smartphones/Trablets - Retrato
+// @media (max-width: 915px) and (orientation: portrait),
+// (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) { ... }
+
+// // Trablets - Retrato
+// @media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) { ... }
+
+// // Tablets - Paisagem
+// @media (max-width: 1195px) and (orientation: landscape),
+// (max-width: 1367px) and (min-height: 1023px) and (orientation: landscape) { ... }
+// */

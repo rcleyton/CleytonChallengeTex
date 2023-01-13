@@ -15,6 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  top: 0;
 }
 .header__brand img {
   width: 75%;
@@ -28,7 +31,7 @@
 .header__nav ul li a {
   text-transform: uppercase;
   color: #011627;
-  font-weight: 700;
+  font-weight: 600;
 }
 .header__nav ul li a:hover {
   color: rgba(1, 22, 39, 0.7);
@@ -50,24 +53,10 @@
   border: 3px solid rgba(0, 0, 0, 0.747);
   width: 2.5rem;
 }
-.header__userProfile .authentication-btn button {
-  box-shadow: 0.3px 0.3px 0.9px rgba(0, 0, 0, 0.02), 0.7px 0.8px 2.1px rgba(0, 0, 0, 0.028), 1.4px 1.5px 3.9px rgba(0, 0, 0, 0.035), 2.5px 2.7px 6.9px rgba(0, 0, 0, 0.042), 4.6px 5px 13px rgba(0, 0, 0, 0.05), 11px 12px 31px rgba(0, 0, 0, 0.07);
-  background-color: #E71D36;
-  color: #FDFFFC;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.header__userProfile .authentication-btn button:hover {
-  background-color: rgba(231, 29, 54, 0.7);
-}
 
-/* END READER */
+/* END HEADER */
 .hero {
-  height: 75vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -305,6 +294,49 @@
   text-align: right;
 }
 
+@media (max-width: 415px) and (orientation: portrait) {
+  .footer {
+    width: 90%;
+  }
+  .footer__title {
+    bottom-margin: 3rem;
+    font-size: 2.5rem;
+    line-height: 9rem;
+    text-align: center;
+  }
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__formReserv, .footer__info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__formReserv .dataReserv {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__formReserv .dataReserv .startDate, .footer__formReserv .dataReserv .endDate {
+    width: 100%;
+  }
+  .footer__formReserv .contactMail button {
+    width: 100%;
+  }
+  .footer__info .infoFooterSocial {
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+  }
+  .footer__text {
+    margin: 1rem 0 0 0;
+    line-height: 2rem;
+    text-align: justify;
+  }
+  .footer__copy {
+    margin: 2rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
 * {
   font-family: "Inter", sans-serif;
   padding: 0;

@@ -17,3 +17,16 @@
     width: 100%;
   }
 }
+
+//  Smartphones - Retrato
+@media (max-width: 415px) and (orientation: portrait) {
+  .areaMap {
+    width: 90%;
+   
+    &__title {
+      text-align: left;
+      line-height: 3rem;
+    }
+  }
+
+}

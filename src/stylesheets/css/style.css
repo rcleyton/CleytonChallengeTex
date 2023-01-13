@@ -69,7 +69,7 @@
   padding: 2rem 0;
 }
 .aboutUs__title {
-  bottom-margin: 3rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   line-height: 9rem;
 }
@@ -100,7 +100,7 @@
   margin: 0 auto;
 }
 .ourHistory__title {
-  bottom-margin: 3rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   line-height: 9rem;
   text-align: right;
@@ -174,7 +174,7 @@
   margin: 0 auto;
 }
 .areaMap__title {
-  bottom-margin: 3rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   line-height: 9rem;
   text-align: right;
@@ -186,12 +186,21 @@
   width: 100%;
 }
 
+@media (max-width: 415px) and (orientation: portrait) {
+  .areaMap {
+    width: 90%;
+  }
+  .areaMap__title {
+    text-align: left;
+    line-height: 3rem;
+  }
+}
 .footer {
   width: 80%;
   margin: 0 auto;
 }
 .footer__title {
-  bottom-margin: 3rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   line-height: 9rem;
 }
@@ -299,7 +308,7 @@
     width: 90%;
   }
   .footer__title {
-    bottom-margin: 3rem;
+    margin-bottom: 3rem;
     font-size: 2.5rem;
     line-height: 9rem;
     text-align: center;

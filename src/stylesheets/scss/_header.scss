@@ -70,12 +70,23 @@
     &__nav ul {
       display: none;
     }
-
   }
- }
+}
 
- @media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 915px) and (orientation: landscape) {
 
+  .header {
+    &__nav ul li a{
+      font-size: .7rem;
+    }
+
+    &__userProfile .profile span {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
   .header {
     &__nav ul li a{
       font-size: .7rem;

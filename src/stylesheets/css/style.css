@@ -72,6 +72,14 @@
     display: none;
   }
 }
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .header__nav ul li a {
+    font-size: 0.7rem;
+  }
+  .header__userProfile .profile span {
+    display: none;
+  }
+}
 .hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/hero.jpg);
@@ -155,6 +163,25 @@
   }
 }
 @media (max-width: 915px) and (orientation: landscape) {
+  .aboutUs {
+    width: 90%;
+    padding: 4rem 0 2rem 0;
+  }
+  .aboutUs__content {
+    flex-direction: column;
+  }
+  .aboutUs__title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 3rem;
+  }
+  .aboutUs__content .contentText {
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
   .aboutUs {
     width: 90%;
     padding: 4rem 0 2rem 0;
@@ -262,6 +289,28 @@
     padding: 0;
   }
 }
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .ourHistory {
+    width: 90%;
+    padding: 2rem 0;
+  }
+  .ourHistory__title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 3rem;
+  }
+  .ourHistory__content2, .ourHistory__content {
+    flex-direction: column;
+  }
+  .ourHistory__content2 {
+    margin-top: 2.5rem;
+  }
+  .ourHistory__content .contentText, .ourHistory__content2 .contentText {
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
 .gallery {
   width: 80%;
   margin: 0 auto;
@@ -330,6 +379,24 @@
     gap: 1rem;
   }
 }
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .gallery {
+    width: 90%;
+    padding: 2rem 0;
+    margin-bottom: 0;
+  }
+  .gallery__title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 3rem;
+    margin: 0;
+  }
+  .gallery__grid {
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+}
 .areaMap {
   width: 80%;
   margin: 0 auto;
@@ -358,6 +425,16 @@
   }
 }
 @media (max-width: 915px) and (orientation: landscape) {
+  .areaMap {
+    width: 90%;
+    padding: 2rem 0 0 0;
+  }
+  .areaMap__title {
+    text-align: left;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
   .areaMap {
     width: 90%;
     padding: 2rem 0 0 0;
@@ -519,6 +596,48 @@
   }
 }
 @media (max-width: 915px) and (orientation: landscape) {
+  .footer {
+    width: 90%;
+  }
+  .footer__title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__formReserv, .footer__info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__formReserv .dataReserv {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__formReserv .dataReserv .startDate, .footer__formReserv .dataReserv .endDate {
+    width: 100%;
+  }
+  .footer__formReserv .contactMail button {
+    width: 100%;
+  }
+  .footer__info .infoFooterSocial {
+    flex-direction: row;
+    margin: 3rem 0 0 0;
+  }
+  .footer__text {
+    margin: 1rem 0 0 0;
+    line-height: 2rem;
+    text-align: justify;
+  }
+  .footer__copy {
+    margin: 2rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
   .footer {
     width: 90%;
   }

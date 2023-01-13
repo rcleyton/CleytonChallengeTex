@@ -76,3 +76,22 @@
     }
   }
 }
+
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .gallery {
+    width: 90%;
+    padding: 2rem 0;
+    margin-bottom: 0;
+
+    &__title {
+      @include mx.responsiveTitle;
+      line-height: 3rem;
+      margin: 0;
+    }
+
+    &__grid {
+      grid-template-columns: auto auto;
+      gap: 1rem;
+    }
+  }
+}

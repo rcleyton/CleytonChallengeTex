@@ -188,7 +188,7 @@
   }
  }
 
- @media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 915px) and (orientation: landscape) {
   .footer {
     width: 90%;
 
@@ -220,7 +220,7 @@
     &__formReserv .contactMail button {
       width: 100%;
     }
-  
+
     &__info .infoFooterSocial{
       flex-direction: row;
       margin: 3rem 0 0 0;
@@ -238,6 +238,58 @@
       font-size: 0.9rem;
     }
   }
- }
+}
+
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .footer {
+    width: 90%;
+
+    &__title {
+      @include mx.responsiveTitle;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__formReserv,
+    &__info {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__formReserv .dataReserv {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__formReserv .dataReserv .startDate,
+    &__formReserv .dataReserv .endDate {
+      width: 100%;
+    }
+
+    &__formReserv .contactMail button {
+      width: 100%;
+    }
+
+    &__info .infoFooterSocial{
+      flex-direction: row;
+      margin: 3rem 0 0 0;
+    }
+
+    &__text {
+      margin: 1rem 0 0 0;
+      line-height: 2rem;
+      text-align: justify;
+    }
+
+    &__copy {
+      margin: 2rem 0 .5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+}
 
 

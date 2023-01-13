@@ -42,3 +42,15 @@
     }
   }
 }
+
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .areaMap {
+    width: 90%;
+    padding: 2rem 0 0 0;
+
+    &__title {
+      text-align: left;
+      line-height: 2rem;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @use "variables" as v; 
 @use "header";
 @use "hero";
+@use "aboutUs";
 
 * {
   font-family: v.$font;

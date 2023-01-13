@@ -4,7 +4,7 @@
 
 /* START HEADER */
 .header {
-  @include mx.container;
+  @include mx.container-fluid;
   display: flex;
   align-items: center;
   justify-content: space-between;

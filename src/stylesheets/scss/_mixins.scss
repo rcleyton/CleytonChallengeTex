@@ -1,8 +1,19 @@
-@mixin container {
+@mixin container-fluid {
   width: 100%;
   margin: 0 auto;
   padding: .2rem 2rem;
   background-color: aliceblue;
+}
+
+@mixin container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin title {
+  bottom-margin: 3rem;
+  font-size: 2.5rem;
+  line-height: 9rem;
 }
 
 @mixin shadow {

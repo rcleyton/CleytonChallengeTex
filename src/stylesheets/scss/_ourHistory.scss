@@ -1,0 +1,87 @@
+@use "variables" as v; 
+@use "mixins" as mx;
+
+.ourHistory {
+  @include mx.container;
+
+  &__title {
+    @include mx.title;
+    text-align: right;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__content2 {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__content .contentImage, 
+  &__content2 .contentImage {
+    min-width: 40%;
+  }
+
+  &__content .contentImage img,
+  &__content2 .contentImage img {
+    @include mx.shadow;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  &__content .contentText {
+    padding: 0 2.5rem 0 0 ;
+  }
+
+  &__content2 .contentText {
+    padding: 0 0 0 2.5rem;
+  }
+
+  &__content .contentParagraph,
+  &__content2 .contentParagraph {
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+
+  &__content .contentParagraph:nth-child(1) {
+    margin-bottom: 2rem;
+  }
+
+  &__content2 .contentParagraph:nth-child(1) {
+    margin-bottom: 2rem;
+  }
+}
+
+// .ourHistory {
+
+//   &__content2 {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//   &__content .contentImage {
+//     min-width: 40%;
+//   }
+
+//   &__content .contentImage img {
+//     @include mx.shadow;
+//     width: 100%;
+//     border-radius: 5px;
+//   }
+
+//   &__content .contentText {
+//     padding: 0 2.5rem 0 0 ;
+//   }
+
+//   &__content .contentParagraph {
+//     font-size: 1.3rem;
+//     text-align: justify;
+//   }
+
+//   &__content .contentParagraph:nth-child(1) {
+//     margin-bottom: 2rem;
+//   }
+// }

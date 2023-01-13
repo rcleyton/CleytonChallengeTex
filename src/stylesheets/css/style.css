@@ -103,7 +103,51 @@
   text-align: justify;
 }
 .aboutUs__content .contentParagraph:nth-child(1) {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ourHistory {
+  width: 80%;
+  margin: 0 auto;
+}
+.ourHistory__title {
+  bottom-margin: 3rem;
+  font-size: 2.5rem;
+  line-height: 9rem;
+  text-align: right;
+}
+.ourHistory__content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.ourHistory__content2 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+.ourHistory__content .contentImage, .ourHistory__content2 .contentImage {
+  min-width: 40%;
+}
+.ourHistory__content .contentImage img, .ourHistory__content2 .contentImage img {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  border-radius: 5px;
+}
+.ourHistory__content .contentText {
+  padding: 0 2.5rem 0 0;
+}
+.ourHistory__content2 .contentText {
+  padding: 0 0 0 2.5rem;
+}
+.ourHistory__content .contentParagraph, .ourHistory__content2 .contentParagraph {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.ourHistory__content .contentParagraph:nth-child(1) {
+  margin-bottom: 2rem;
+}
+.ourHistory__content2 .contentParagraph:nth-child(1) {
+  margin-bottom: 2rem;
 }
 
 * {

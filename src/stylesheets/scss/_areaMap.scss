@@ -1,0 +1,19 @@
+@use "variables" as v; 
+@use "mixins" as mx;
+
+.areaMap {
+  @include mx.container;
+
+  &__title {
+    @include mx.title;
+    text-align: right;
+  }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__map iframe {
+    width: 100%;
+  }
+}

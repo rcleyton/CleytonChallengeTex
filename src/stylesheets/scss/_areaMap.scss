@@ -6,6 +6,7 @@
 
   &__title {
     @include mx.title;
+    text-align: right;
   }
 
   &__map {

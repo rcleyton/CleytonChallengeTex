@@ -7,6 +7,7 @@
 
   &__title {
     @include mx.title;
+    color: v.$titles;
   }
 
   &__content {
@@ -96,6 +97,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: v.$fontSecond;
   }
 
   &__formReserv .contactMail button:hover {
@@ -108,6 +110,8 @@
 
   &__info .contactTitle,
   &__info .socialTitle {
+    font-family: 'Pacifico', cursive;
+    color: v.$titles;
     font-size: 1.5rem;
     padding-bottom: 2rem;
   }

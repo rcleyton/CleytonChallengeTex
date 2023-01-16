@@ -99,6 +99,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.hero__wave {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
 
 @media (max-width: 415px) and (orientation: portrait) {
   .hero__slogan {
@@ -113,13 +118,14 @@
 .aboutUs {
   width: 80%;
   margin: 0 auto;
-  padding: 2rem 0;
 }
 .aboutUs__title {
   font-family: "Pacifico", cursive;
-  margin-bottom: 3rem;
+  color: #011627;
   font-size: 2.5rem;
   line-height: 9rem;
+  text-align: right;
+  color: #E71D36;
 }
 .aboutUs__content {
   display: flex;
@@ -128,19 +134,46 @@
   min-width: 40%;
 }
 .aboutUs__content .contentImage img {
+  border-radius: 65% 35% 26% 74%/36% 53% 47% 64%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
-  border-radius: 5px;
 }
 .aboutUs__content .contentText {
-  padding: 0 0 0 2.5rem;
+  display: flex;
+  padding: 0 0 0 6rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .aboutUs__content .contentParagraph {
-  font-size: 1.3rem;
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
   text-align: justify;
+  padding: 0 0 2rem 0;
 }
-.aboutUs__content .contentParagraph:nth-child(1) {
-  margin-bottom: 2rem;
+.aboutUs__content .contentPlus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.aboutUs__content .contentPlus i {
+  font-size: 3rem;
+  color: #3c6e71;
+  padding: 0 2rem 0 0;
+}
+.aboutUs__content .contentPlus .reservar {
+  box-shadow: 0.3px 0.3px 0.9px rgba(0, 0, 0, 0.02), 0.7px 0.8px 2.1px rgba(0, 0, 0, 0.028), 1.4px 1.5px 3.9px rgba(0, 0, 0, 0.035), 2.5px 2.7px 6.9px rgba(0, 0, 0, 0.042), 4.6px 5px 13px rgba(0, 0, 0, 0.05), 11px 12px 31px rgba(0, 0, 0, 0.07);
+  margin-top: 1rem;
+  background-color: #E71D36;
+  color: #FDFFFC;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.aboutUs__content .contentPlus .reservar:hover {
+  background-color: rgba(231, 29, 54, 0.7);
 }
 
 @media (max-width: 415px) and (orientation: portrait) {
@@ -160,6 +193,22 @@
   .aboutUs__content .contentText {
     margin-top: 2rem;
     padding: 0;
+  }
+  .aboutUs__content .contentPlus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .aboutUs__content .contentPlus i {
+    padding: 0;
+  }
+  .aboutUs__content .contentPlus .contentIcons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutUs__content .contentPlus .reservar {
+    width: 100%;
   }
 }
 @media (max-width: 915px) and (orientation: landscape) {
@@ -203,13 +252,14 @@
 .ourHistory {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
 .ourHistory__title {
   font-family: "Pacifico", cursive;
-  margin-bottom: 3rem;
+  color: #011627;
   font-size: 2.5rem;
   line-height: 9rem;
-  text-align: right;
+  text-align: left;
 }
 .ourHistory__content {
   display: flex;
@@ -225,8 +275,8 @@
 }
 .ourHistory__content .contentImage img, .ourHistory__content2 .contentImage img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 65% 35% 26% 74%/36% 53% 47% 64%;
   width: 100%;
-  border-radius: 5px;
 }
 .ourHistory__content .contentText {
   padding: 0 2.5rem 0 0;
@@ -318,8 +368,10 @@
 }
 .gallery__title {
   font-family: "Pacifico", cursive;
+  color: #011627;
   font-size: 2.5rem;
-  margin-top: 5rem;
+  line-height: 9rem;
+  color: #E71D36;
 }
 .gallery__star li {
   display: inline-block;
@@ -403,10 +455,11 @@
 }
 .areaMap__title {
   font-family: "Pacifico", cursive;
-  margin-bottom: 3rem;
+  color: #011627;
   font-size: 2.5rem;
   line-height: 9rem;
   text-align: right;
+  color: #E71D36;
 }
 .areaMap__map {
   width: 100%;
@@ -451,9 +504,10 @@
 }
 .footer__title {
   font-family: "Pacifico", cursive;
-  margin-bottom: 3rem;
+  color: #011627;
   font-size: 2.5rem;
   line-height: 9rem;
+  color: #E71D36;
 }
 .footer__content {
   display: flex;
@@ -526,6 +580,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Pacifico", cursive;
 }
 .footer__formReserv .contactMail button:hover {
   background-color: rgba(231, 29, 54, 0.7);
@@ -534,6 +589,8 @@
   margin: 0 0 0 2rem;
 }
 .footer__info .contactTitle, .footer__info .socialTitle {
+  font-family: "Pacifico", cursive;
+  color: #E71D36;
   font-size: 1.5rem;
   padding-bottom: 2rem;
 }
@@ -682,6 +739,7 @@
 }
 * {
   font-family: "Inter", sans-serif;
+  color: #011627;
   padding: 0;
   margin: 0;
   box-sizing: border-box;

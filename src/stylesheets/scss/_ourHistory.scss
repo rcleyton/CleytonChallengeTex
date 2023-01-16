@@ -3,10 +3,11 @@
 
 .ourHistory {
   @include mx.container;
+  margin-bottom: 2.5rem;
 
   &__title {
     @include mx.title;
-    text-align: right;
+    text-align: left;
   }
 
   &__content {
@@ -28,8 +29,8 @@
   &__content .contentImage img,
   &__content2 .contentImage img {
     @include mx.shadow;
+    @include mx.fancyBorderRadius2;
     width: 100%;
-    border-radius: 5px;
   }
 
   &__content .contentText {

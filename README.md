@@ -15,6 +15,3 @@ e aplicando responsividade.
 - [X] Smartphone landscape
 - [X] Tablet portrait
 - [X] Tablet landscape
-
-## Wireframe
-<img src="src/images/wirefram.png" alt="drawing" width="200"/>

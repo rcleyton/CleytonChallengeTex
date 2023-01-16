@@ -1,0 +1,68 @@
+@use "variables" as v; 
+@use "mixins" as mx;
+
+.parallax {
+  @include mx.container;
+  background-image: url("../../images/fachada.jpg");
+  min-height: 700px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 3rem;
+    font-family: v.$fontSecond;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .parallax {
+    width: 90%;
+
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+}
+
+@media (max-width: 915px) and (orientation: landscape) {  
+  .parallax {
+    width: 90%;
+
+    &__title {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .parallax {
+    width: 90%;
+
+    &__title {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1195px) and (orientation: landscape),
+(max-width: 1367px) and (min-height: 1023px) and (orientation: landscape) {
+  .parallax {
+    
+    &__title {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+}
